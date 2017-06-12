@@ -257,7 +257,24 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
+#authors span
+{
+    margin : 0 10px;
+}
 
+.authorphoto img {
+  width: 140px;
+  border-radius: 140px;
+  margin-bottom: 10px;
+}
+
+.author {
+  display: inline-block;
+  width: 140px;
+  font-size : 15px;
+  text-align: center;
+  margin-right:10px;
+}
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
