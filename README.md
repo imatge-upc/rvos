@@ -1,3 +1,16 @@
+## How to use this within imatge-upc organization
+
+We cannot fork the same repository twice in the same organization, so if you want to use this in your projects you must run these git commands from your existing github repo (if you don't have one yet just create it).
+
+```
+git remote add gh-pages https://github.com/imatge-upc/wwwtemplate.git
+git fetch gh-pages
+git checkout gh-pages
+git push origin gh-pages
+```
+
+Your website will be now published and hosted in the ```gh-pages``` branch in your repository.
+
 Fancy jekyll powered single page site
 ======================
 
