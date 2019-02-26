@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# rvos-website
-=======
 ## How to use this within imatge-upc organization
 
 We cannot fork the same repository twice in the same organization, so if you want to use this in your projects you must run these git commands from your existing github repo (if you don't have one yet just create it).
@@ -223,4 +220,3 @@ So you've got a copy running and there's some new update? Let's update!
     1. `git merge singlepage/publish`
 4. You can alternatively update using rebase. This *rewrites history* (**bad**), but it is cleaner.
     1. `git rebase singlepage/publish`
->>>>>>> a0bc00572c44777f540126e48cfafe54e42a3592
