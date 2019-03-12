@@ -14,11 +14,11 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "Paper title"
-keywords:    "computer vision, deep learning, whatever"
+title:       "RVOS: End-to-End Recurrent Network for Video Object Segmentation"
+keywords:    "computer vision, deep learning, video object segmentation"
 description: "Description here"
-source_link: "https://github.com/imatge-upc/wwwtemplate"
-favicon:     "img/favicon.ico"
+source_link: "https://github.com/imatge-upc/rvos"
+favicon:     "img/upc.ico"
 touch_icon:  "img/apple-touch-icon.png"
 # google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
 
