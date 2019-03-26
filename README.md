@@ -2,6 +2,8 @@
 
 See our project website [here](https://imatge-upc.github.io/rvos/).
 
+In order to develop this code, we used RSIS (Recurrent Semantic Instance Segmentation), which can be found [here](https://github.com/imatge-upc/rsis), and modified it to suit it to video object segmentation task.
+
 ## Installation
 - Clone the repo:
 
