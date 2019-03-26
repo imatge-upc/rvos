@@ -1,4 +1,4 @@
-# This script generates a framelist.txt for every folder inside the YoutubeVos dataset. This is made in the huge amount of
+# This script generates a data structure in the form of key-value storage. This is made in the huge amount of 
 # calls to the function os.listdir inside base_youtube.py
 
 import os
