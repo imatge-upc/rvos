@@ -1,0 +1,2 @@
+python ../src/train_previous_mask.py -model_name=spatiotemporal_youtube_bs_04_lc_05_256p -dataset=youtube -batch_size=4 -length_clip=5 -base_model=resnet101 -max_epoch=20 --augment --resize -gpu_id=0
+python ../src/train_previous_inference_mask.py -dataset=youtube --transfer -transfer_from=spatiotemporal_youtube_bs_04_lc_05_256p_prev_mask -model_name=spatiotemporal_youtube_bs_04_lc_05_256p -batch_size=4 -length_clip=5 -base_model=resnet101 -max_epoch=20 --augment --resize -gpu_id=0

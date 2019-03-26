@@ -1,0 +1,849 @@
+attributes: [AC, BC, CS, DB, DEF, EA, FM, HO, IO, LR, MB, OCC, OV, ROT, SC, SV]
+sets:  [train, val, val-dev]
+years: [2016, 2017]
+
+sequences:
+
+- name: aerobatics
+  attributes: []
+  num_frames: 71
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: bear
+  attributes: [DEF]
+  num_frames: 82
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: bike-packing
+  attributes: []
+  num_frames: 69
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: blackswan
+  attributes: []
+  num_frames: 50
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: bmx-bumps
+  attributes: [LR, SV, SC, FM, CS, IO, MB, OCC, HO, EA, OV]
+  num_frames: 90
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: bmx-trees
+  attributes: [LR, SV, SC, FM, CS, IO, MB, DEF, OCC, HO, EA, BC]
+  num_frames: 80
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: boat
+  attributes: [SC, DB, EA, BC]
+  num_frames: 75
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: boxing-fisheye
+  attributes: []
+  num_frames: 87
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: breakdance
+  attributes: [FM, DB, MB, DEF, HO, ROT, OV, AC]
+  num_frames: 84
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: breakdance-flare
+  attributes: [FM, CS, MB, DEF, HO, ROT]
+  num_frames: 71
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: bus
+  attributes: [SC, OCC, HO, EA]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: camel
+  attributes: [CS, IO, DEF, ROT]
+  num_frames: 90
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: car-race
+  attributes: []
+  num_frames: 31
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: car-roundabout
+  attributes: [ROT, BC]
+  num_frames: 75
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: car-shadow
+  attributes: [LR, EA, AC, BC]
+  num_frames: 40
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: car-turn
+  attributes: [SV, ROT, BC]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: carousel
+  attributes: []
+  num_frames: 69
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: cat-girl
+  attributes: []
+  num_frames: 89
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: cats-car
+  attributes: []
+  num_frames: 67
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: chamaleon
+  attributes: []
+  num_frames: 85
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: classic-car
+  attributes: []
+  num_frames: 63
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: color-run
+  attributes: []
+  num_frames: 84
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: cows
+  attributes: [CS, IO, DEF, OCC, HO]
+  num_frames: 104
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: crossing
+  attributes: []
+  num_frames: 52
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: dance-jump
+  attributes: [SC, DB, MB, DEF, OCC, HO, ROT, EA]
+  num_frames: 60
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: dance-twirl
+  attributes: [SC, CS, IO, MB, DEF, HO, ROT, OV]
+  num_frames: 90
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: dancing
+  attributes: []
+  num_frames: 62
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: deer
+  attributes: []
+  num_frames: 79
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: disc-jockey
+  attributes: []
+  num_frames: 76
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: dog
+  attributes: [FM, CS, MB, DEF, ROT, EA]
+  num_frames: 60
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: dog-agility
+  attributes: [FM, MB, DEF, OCC, HO, EA, OV, AC]
+  num_frames: 25
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: dog-gooses
+  attributes: []
+  num_frames: 86
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: dogs-jump
+  attributes: []
+  num_frames: 66
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: dogs-scale
+  attributes: []
+  num_frames: 83
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: drift-chicane
+  attributes: [LR, SV, FM, DB, HO, ROT, EA, AC]
+  num_frames: 52
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: drift-straight
+  attributes: [LR, SV, FM, CS, MB, HO, ROT, EA, OV, AC]
+  num_frames: 50
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: drift-turn
+  attributes: [SV, FM, IO, DB, HO, ROT, OV, AC]
+  num_frames: 64
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: drone
+  attributes: []
+  num_frames: 91
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: elephant
+  attributes: [CS, DB, DEF, EA]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: flamingo
+  attributes: [SC, IO, DB, DEF, HO]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: giant-slalom
+  attributes: []
+  num_frames: 127
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: girl-dog
+  attributes: []
+  num_frames: 86
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: goat
+  attributes: [CS, DEF, EA, BC]
+  num_frames: 90
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: gold-fish
+  attributes: []
+  num_frames: 78
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: golf
+  attributes: []
+  num_frames: 79
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: guitar-violin
+  attributes: []
+  num_frames: 55
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: gym
+  attributes: []
+  num_frames: 60
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: helicopter
+  attributes: []
+  num_frames: 49
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: hike
+  attributes: [LR, DEF, HO]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: hockey
+  attributes: [SC, IO, DEF, HO, ROT]
+  num_frames: 75
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: horsejump-high
+  attributes: [SC, IO, DEF, OCC, HO]
+  num_frames: 50
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: horsejump-low
+  attributes: [SC, IO, DEF, OCC, HO, EA]
+  num_frames: 60
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: horsejump-stick
+  attributes: []
+  num_frames: 58
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: hoverboard
+  attributes: []
+  num_frames: 81
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: india
+  attributes: []
+  num_frames: 81
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: judo
+  attributes: []
+  num_frames: 34
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: kid-football
+  attributes: []
+  num_frames: 68
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: kite-surf
+  attributes: [SV, SC, IO, DB, MB, OCC, HO, EA]
+  num_frames: 50
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: kite-walk
+  attributes: [SC, IO, DB, DEF, OCC, HO]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: koala
+  attributes: []
+  num_frames: 100
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: lab-coat
+  attributes: []
+  num_frames: 47
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: lady-running
+  attributes: []
+  num_frames: 65
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: libby
+  attributes: [SC, MB, DEF, OCC, HO, EA]
+  num_frames: 49
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: lindy-hop
+  attributes: []
+  num_frames: 73
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: loading
+  attributes: []
+  num_frames: 50
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: lock
+  attributes: []
+  num_frames: 43
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: longboard
+  attributes: []
+  num_frames: 52
+  set: train
+  eval_t: False
+  year: 2017
+
+
+- name: lucia
+  attributes: [DEF, OCC, HO]
+  num_frames: 70
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: mallard-fly
+  attributes: [LR, SV, FM, DB, MB, DEF, ROT, EA, OV, AC]
+  num_frames: 70
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: mallard-water
+  attributes: [LR, IO, DB, EA]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: man-bike
+  attributes: []
+  num_frames: 75
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+
+- name: mbike-trick
+  attributes: []
+  num_frames: 79
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: miami-surf
+  attributes: []
+  num_frames: 70
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: monkeys-trees
+  attributes: []
+  num_frames: 83
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+
+- name: motocross-bumps
+  attributes: [SV, FM, IO, HO, ROT, OV, AC, BC]
+  num_frames: 60
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: motocross-jump
+  attributes: [SV, SC, FM, IO, MB, DEF, HO, ROT, EA, OV, AC]
+  num_frames: 40
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: motorbike
+  attributes: [LR, SV, SC, FM, IO, OCC, HO, ROT, EA]
+  num_frames: 43
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: mtb-race
+  attributes: []
+  num_frames: 69
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: night-race
+  attributes: []
+  num_frames: 46
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: orchid
+  attributes: []
+  num_frames: 57
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: paragliding
+  attributes: [LR, SC, IO, HO]
+  num_frames: 70
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: paragliding-launch
+  attributes: [SC, IO, DEF, HO, EA]
+  num_frames: 80
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: parkour
+  attributes: [LR, SV, FM, DEF, OCC, HO, ROT, AC]
+  num_frames: 100
+  set: val
+  eval_t: False
+  year: 2016
+
+- name: people-sunset
+  attributes: []
+  num_frames: 67
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: pigs
+  attributes: []
+  num_frames: 79
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: planes-crossing
+  attributes: []
+  num_frames: 31
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: planes-water
+  attributes: []
+  num_frames: 38
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: rallye
+  attributes: []
+  num_frames: 50
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: rhino
+  attributes: [DEF, OCC, BC]
+  num_frames: 90
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: rollerblade
+  attributes: [LR, FM, CS, MB, DEF, HO]
+  num_frames: 35
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: rollercoaster
+  attributes: []
+  num_frames: 70
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: salsa
+  attributes: []
+  num_frames: 86
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: schoolgirls
+  attributes: []
+  num_frames: 80
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: scooter-black
+  attributes: [SV, IO, HO, EA]
+  num_frames: 43
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: scooter-board
+  attributes: []
+  num_frames: 91
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: scooter-gray
+  attributes: [SC, FM, IO, OCC, HO, ROT, EA, BC]
+  num_frames: 75
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: seasnake
+  attributes: []
+  num_frames: 80
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: sheep
+  attributes: []
+  num_frames: 68
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: shooting
+  attributes: []
+  num_frames: 40
+  set: val
+  eval_t: False
+  year: 2017
+
+- name: skate-jump
+  attributes: []
+  num_frames: 68
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: skate-park
+  attributes: []
+  num_frames: 80
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: slackline
+  attributes: []
+  num_frames: 60
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: snowboard
+  attributes: []
+  num_frames: 66
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: soapbox
+  attributes: [SV, IO, MB, DEF, HO, ROT, AC]
+  num_frames: 99
+  set: val
+  eval_t: True
+  year: 2016
+
+- name: soccerball
+  attributes: [LR, FM, MB, OCC, HO]
+  num_frames: 48
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: stroller
+  attributes: [SC, FM, CS, IO, DEF, HO]
+  num_frames: 91
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: stunt
+  attributes: []
+  num_frames: 71
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: subway
+  attributes: []
+  num_frames: 88
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: surf
+  attributes: [SV, FM, CS, IO, DB, HO, OV]
+  num_frames: 55
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: swing
+  attributes: [SC, FM, IO, DEF, OCC, HO]
+  num_frames: 60
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: tandem
+  attributes: []
+  num_frames: 72
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+
+- name: tennis
+  attributes: [SV, FM, IO, MB, DEF, HO]
+  num_frames: 70
+  set: train
+  eval_t: False
+  year: 2016
+
+- name: tennis-vest
+  attributes: []
+  num_frames: 75
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: tractor
+  attributes: []
+  num_frames: 65
+  set: test-dev
+  eval_t: False
+  year: 2017
+
+- name: tractor-sand
+  attributes: []
+  num_frames: 76
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: train
+  attributes: [SC, HO, EA]
+  num_frames: 80
+  set: train
+  eval_t: True
+  year: 2016
+
+- name: tuk-tuk
+  attributes: []
+  num_frames: 59
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: upside-down
+  attributes: []
+  num_frames: 65
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: varanus-cage
+  attributes: []
+  num_frames: 67
+  set: train
+  eval_t: False
+  year: 2017
+
+- name: walking
+  attributes: []
+  num_frames: 72
+  set: train
+  eval_t: False
+  year: 2017
