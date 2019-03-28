@@ -122,7 +122,6 @@ def get_parser():
     parser.add_argument('-min_size',dest='min_size', default=0.001, type=float)
     parser.add_argument('--display', dest='display', action='store_true')
     parser.add_argument('--no_display_text', dest='no_display_text', action='store_true')
-    parser.add_argument('--display_route', dest='display_route', action='store_true')
     parser.set_defaults(display=False)
     parser.set_defaults(display_route=False)
     parser.set_defaults(no_display_text=False)
