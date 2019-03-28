@@ -1,0 +1,11 @@
+---
+title: "Slides"
+bg: 'blue'
+color: white
+style: center
+fa-icon: slideshare
+---
+
+Lecture on Video Object Segmentation at the [Master in Computer Vision Barcelona](http://pagines.uab.cat/mcv/) 2019.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT3ng97_woclvNSLi21cMIEasphlIKc3yQZsxV1uRzayoBPDtsrVwAPmS9c9rk5Nncgnly5IwBHZ5Wg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
