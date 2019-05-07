@@ -59,6 +59,14 @@ We provide bash scripts to  evaluate models for the YouTube-VOS and DAVIS 2017 d
 
 Furthermore, in the ```src``` folder, ```prepare_results_submission.py```and ```prepare_results_submission_davis``` can be applied to change the format of the results in the appropiate format to use the official evaluation servers of [YouTube-VOS](https://competitions.codalab.org/competitions/19544) and [DAVIS](https://competitions.codalab.org/competitions/16526) respectively.
 
+## Demo
+
+You can run demo.py to do generate the segmentation masks of a video. Just do:
+```
+python demo.py
+```
+and it will generate the resulting masks.  
+
 
 ## Pretrained models
 
