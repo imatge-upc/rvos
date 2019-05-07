@@ -19,10 +19,10 @@ from utils.utils import batch_to_var_test, load_checkpoint, check_parallel
 
 
 class Sequence:
-    def __init__(self, args, frames_path, init_mask_path, seq_name):
+    def __init__(self, args, seq_name):
         # Frames and annotation paths
-        self.frames_path = frames_path
-        self.init_mask_path = init_mask_path
+        self.frames_path = args.frames_path
+        self.init_mask_path = args.init_mask_path
         self.seq_name = seq_name
         # Frames information
         self.frames_list = None
@@ -38,7 +38,7 @@ class Sequence:
         # Initialize variables
         self._get_frames_list()
         self.load_frames()
-        if init_mask_path:
+        if args.zero_shot:
             # Semi-supervised
             self.load_annot(args.use_gpu)
 
@@ -232,24 +232,9 @@ class SaveResults:
 
 
 if __name__ == "__main__":
-    # Frames and annotation for the first frame
-    frames_path = '../../databases/DAVIS2017/JPEGImages/480p/aerobatics'
-    init_mask_path = '../../databases/DAVIS2017/Annotations/480p/aerobatics/00000.png'
-    # Uncomment for zero-shot
-    # frames_path = '../../databases/YouTubeVOS/val/JPEGImages/0062f687f1'
-    # init_mask_path = ''
-    seq_name = os.path.basename(frames_path)
-
     parser = get_parser()
     args = parser.parse_args()
-
-    # Custom args for this demo
-    # args.model_name = 'one-shot-model-davis'
-    # # Uncomment for zero-shot
-    # # args.model_name = 'zero-shot-model-davis'
-    # args.gpu_id = 0
-    # args.use_gpu = False
-    # args.overlay_masks = True
+    seq_name = os.path.basename(args.frames_path)
 
     # Save the results
     masks_save_path = os.path.join('../models', args.model_name, 'results')
@@ -267,7 +252,7 @@ if __name__ == "__main__":
         torch.manual_seed(args.seed)
 
     # Sequence object
-    seq = Sequence(args, frames_path, init_mask_path, seq_name)
+    seq = Sequence(args, seq_name)
     model = Model(args)
     results = SaveResults(seq, masks_save_path)
 
@@ -278,12 +263,12 @@ if __name__ == "__main__":
         img = img.unsqueeze(0)
         x = batch_to_var_test(args, img)
 
-        if prev_mask:
-            # Semi-supervised
+        if not args.zero_shot:
+            # One-shot
             outs, hidden_temporal_list = test_prev_mask(args, model.encoder, model.decoder, x,
                                                         prev_hidden_temporal_list, prev_mask)
         else:
-            # Unsupervised
+            # Zero-shot
             outs, hidden_temporal_list = test(args, model.encoder, model.decoder, x, prev_hidden_temporal_list)
 
         frame_name = os.path.splitext(os.path.basename(seq.frames_list[ii]))[0]
