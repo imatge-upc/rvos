@@ -63,9 +63,11 @@ Furthermore, in the ```src``` folder, ```prepare_results_submission.py```and ```
 
 You can run demo.py to do generate the segmentation masks of a video. Just do:
 ```
-python demo.py
+python demo.py -model_name one-shot-model-davis --overlay_masks
 ```
-and it will generate the resulting masks.  
+and it will generate the resulting masks.
+
+To run the demo for your own videos extract the frames to a folder (make sure their names are like 00000.jpg, 00001.jpg, ...) and have the initial mask corresponding to the first frame.
 
 
 ## Pretrained models
