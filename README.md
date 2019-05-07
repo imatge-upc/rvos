@@ -67,7 +67,14 @@ python demo.py -model_name one-shot-model-davis --overlay_masks
 ```
 and it will generate the resulting masks.
 
-To run the demo for your own videos extract the frames to a folder (make sure their names are like 00000.jpg, 00001.jpg, ...) and have the initial mask corresponding to the first frame.
+To run the demo for your own videos:
+1. extract the frames to a folder (make sure their names are in order, e.g. 00000.jpg, 00001.jpg, ...) 
+2. Have the initial mask corresponding to the first frame (e.g. 00000.png).
+3. run 
+  ```python demo.py -model_name one-shot-model-davis -frames_path path-to-your-frames -mask_path path-to-initial-mask --overlay_masks```
+
+to do it for zero-shot (i.e. without initial mask) run
+  ```python demo.py -model_name one-shot-model-davis -frames_path path-to-your-frames --zero_shot --overlay_masks```
 
 
 ## Pretrained models
