@@ -244,12 +244,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Custom args for this demo
-    args.model_name = 'one-shot-model-davis'
-    # Uncomment for zero-shot
-    # args.model_name = 'zero-shot-model-davis'
-    args.gpu_id = 0
-    args.use_gpu = False
-    args.overlay_masks = True
+    # args.model_name = 'one-shot-model-davis'
+    # # Uncomment for zero-shot
+    # # args.model_name = 'zero-shot-model-davis'
+    # args.gpu_id = 0
+    # args.use_gpu = False
+    # args.overlay_masks = True
 
     # Save the results
     masks_save_path = os.path.join('../models', args.model_name, 'results')
