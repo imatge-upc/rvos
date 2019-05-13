@@ -74,7 +74,7 @@ To run the demo for your own videos:
   ```python demo.py -model_name one-shot-model-davis -frames_path path-to-your-frames -mask_path path-to-initial-mask --overlay_masks```
 
 to do it for zero-shot (i.e. without initial mask) run
-  ```python demo.py -model_name one-shot-model-davis -frames_path path-to-your-frames --zero_shot --overlay_masks```
+  ```python demo.py -model_name zero-shot-model-davis -frames_path path-to-your-frames --zero_shot --overlay_masks```
 
 
 ## Pretrained models
