@@ -38,7 +38,7 @@ class Sequence:
         # Initialize variables
         self._get_frames_list()
         self.load_frames()
-        if args.zero_shot:
+        if not args.zero_shot:
             # Semi-supervised
             self.load_annot(args.use_gpu)
 
