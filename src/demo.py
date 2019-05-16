@@ -238,6 +238,8 @@ class SaveResults:
 if __name__ == "__main__":
     parser = get_parser()
     args = parser.parse_args()
+    if args.frames_path[-1] == '/':
+        args.frames_path = args.frames_path[:-1]
     seq_name = os.path.basename(args.frames_path)
 
     # Save the results
@@ -245,6 +247,7 @@ if __name__ == "__main__":
     if not os.path.isdir(masks_save_path):
         os.mkdir(masks_save_path)
     masks_save_path = os.path.join(masks_save_path, seq_name)
+    print('Results will be saved to: ' + masks_save_path)
     if not os.path.isdir(masks_save_path):
         os.mkdir(masks_save_path)
 
