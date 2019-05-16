@@ -181,8 +181,7 @@ class SaveResults:
             indxs_instance = np.where(mask_pred > 0.5)
             mask2assess = np.zeros((height, width))
             mask2assess[indxs_instance] = 255
-            mask_save_path = os.path.join(self.save_path, self.seq.seq_name,
-                                          frame_name + '_instance_%02d.png' % (t))
+            mask_save_path = os.path.join(self.save_path, frame_name + '_instance_%02d.png' % (t))
 
             toimage(mask2assess, cmin=0, cmax=255).save(mask_save_path)
 
@@ -238,15 +237,19 @@ class SaveResults:
 if __name__ == "__main__":
     parser = get_parser()
     args = parser.parse_args()
-    if args.frames_path[-1] == '/':
-        args.frames_path = args.frames_path[:-1]
-    seq_name = os.path.basename(args.frames_path)
 
-    # Save the results
-    masks_save_path = os.path.join('../models', args.model_name, 'results')
-    if not os.path.isdir(masks_save_path):
-        os.mkdir(masks_save_path)
-    masks_save_path = os.path.join(masks_save_path, seq_name)
+    if args.results_path is not None:
+        masks_save_path = args.results_path
+        seq_name = ''
+    else:
+        if args.frames_path[-1] == '/':
+            args.frames_path = args.frames_path[:-1]
+        seq_name = os.path.basename(args.frames_path)
+        masks_save_path = os.path.join('../models', args.model_name, 'results')
+        if not os.path.isdir(masks_save_path):
+            os.mkdir(masks_save_path)
+        masks_save_path = os.path.join(masks_save_path, seq_name)
+
     print('Results will be saved to: ' + masks_save_path)
     if not os.path.isdir(masks_save_path):
         os.mkdir(masks_save_path)
