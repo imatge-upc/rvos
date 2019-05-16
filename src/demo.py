@@ -284,6 +284,8 @@ if __name__ == "__main__":
         frame_name = os.path.splitext(os.path.basename(seq.frames_list[ii]))[0]
         if args.overlay_masks:
             results.save_result_overlay(x, outs, frame_name)
+        else:
+            results.save_result(x, outs, frame_name)
 
         if model.video_mode:
             if not args.only_spatial:
