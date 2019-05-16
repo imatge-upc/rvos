@@ -9,7 +9,7 @@ import torch
 
 from args import get_parser
 from dataloader.dataset_utils import sequence_palette
-from modules.model import RSISMask, FeatureExtractor
+from modules.model import RSIS, RSISMask, FeatureExtractor
 from PIL import Image
 from scipy.misc import imresize, toimage
 from test import test_prev_mask, test
@@ -127,14 +127,17 @@ class Model:
         encoder_dict, decoder_dict, _, _, load_args = load_checkpoint(args.model_name, args.use_gpu)
         load_args.use_gpu = args.use_gpu
         self.encoder = FeatureExtractor(load_args)
-        self.decoder = RSISMask(load_args)
+        if args.zero_shot:
+            self.decoder = RSIS(load_args)
+        else:
+            self.decoder = RSISMask(load_args)
         print(load_args)
 
         if args.ngpus > 1 and args.use_gpu:
-            self.decoder = torch.nn.DataParallel(self.decoder,device_ids=range(args.ngpus))
-            self.encoder = torch.nn.DataParallel(self.encoder,device_ids=range(args.ngpus))
+            self.decoder = torch.nn.DataParallel(self.decoder, device_ids=range(args.ngpus))
+            self.encoder = torch.nn.DataParallel(self.encoder, device_ids=range(args.ngpus))
 
-        encoder_dict, decoder_dict = check_parallel(encoder_dict,decoder_dict)
+        encoder_dict, decoder_dict = check_parallel(encoder_dict, decoder_dict)
         self.encoder.load_state_dict(encoder_dict)
 
         to_be_deleted_dec = []
