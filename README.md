@@ -75,6 +75,8 @@ To run the demo for your own videos:
 
 to do it for zero-shot (i.e. without initial mask) run
   ```python demo.py -model_name zero-shot-model-davis -frames_path path-to-your-frames --zero_shot --overlay_masks```
+  
+Also you can use the argument `-results_path` to save the results to the folder you prefer.
 
 
 ## Pretrained models
