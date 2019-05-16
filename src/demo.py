@@ -219,15 +219,16 @@ class SaveResults:
         plt.axis('off')
         plt.imshow(frame_img)
 
-        for t in range(len(self.seq.instance_ids)):
-            mask_pred = (torch.squeeze(net_outs[0, t, :])).cpu().numpy()
-            mask_pred = np.reshape(mask_pred, (height, width))
-            ax = plt.gca()
-            tmp_img = np.ones((mask_pred.shape[0], mask_pred.shape[1], 3))
-            color_mask = np.array(self.colors[t]) / 255.0
-            for i in range(3):
-                tmp_img[:, :, i] = color_mask[i]
-            ax.imshow(np.dstack((tmp_img, mask_pred * 0.7)))
+        if self.seq.instance_ids is not None:
+            for t in range(len(self.seq.instance_ids)):
+                mask_pred = (torch.squeeze(net_outs[0, t, :])).cpu().numpy()
+                mask_pred = np.reshape(mask_pred, (height, width))
+                ax = plt.gca()
+                tmp_img = np.ones((mask_pred.shape[0], mask_pred.shape[1], 3))
+                color_mask = np.array(self.colors[t]) / 255.0
+                for i in range(3):
+                    tmp_img[:, :, i] = color_mask[i]
+                ax.imshow(np.dstack((tmp_img, mask_pred * 0.7)))
 
         figname = os.path.join(self.save_path, frame_name + '.png')
         plt.savefig(figname, bbox_inches='tight')
