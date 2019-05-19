@@ -41,6 +41,8 @@ class Sequence:
         if not args.zero_shot:
             # Semi-supervised
             self.load_annot(args.use_gpu)
+        if args.zero_shot:
+            self.instance_ids = np.arange(0, 10)  # Get 10 instances for zero-shot
 
     def _get_frames_list(self):
         self.frames_list = sorted(os.listdir(self.frames_path))
