@@ -17,4 +17,4 @@ imageio==2.4.1
 lmdb==0.94
 easydict==1.9
 prettytable==0.7.2
-PyYAML==3.13
+PyYAML==5.1
