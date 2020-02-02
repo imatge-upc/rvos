@@ -8,7 +8,7 @@ In order to develop this code, we used RSIS (Recurrent Semantic Instance Segment
 - Clone the repo:
 
 ```shell
-git clone https://github.com/carlesventura/rvos.git
+git clone https://github.com/imatge-upc/rvos.git
 ```
 
 - Install requirements ```pip install -r requirements.txt``` 
