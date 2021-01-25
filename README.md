@@ -4,7 +4,13 @@ See our project website [here](https://imatge-upc.github.io/rvos/).
 
 In order to develop this code, we used RSIS (Recurrent Semantic Instance Segmentation), which can be found [here](https://github.com/imatge-upc/rsis), and modified it to suit it to video object segmentation task.
 
-![RVOS](https://github.com/imatge-upc/rvos/blob/master/rvos_longboard.gif)
+One shot visual results
+
+![RVOS One shot](https://github.com/imatge-upc/rvos/blob/master/rvos_supp_oneshot.gif) 
+
+Zero shot visual results
+
+![RVOS Zero shot](https://github.com/imatge-upc/rvos/blob/master/rvos_supp_zeroshot.gif)
 
 ## License
 
