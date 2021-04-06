@@ -35,7 +35,7 @@ pip3 install torchvision
 
 ### YouTube-VOS
 
-Download the YouTube-VOS dataset from their [website](https://youtube-vos.org/home). You will need to register to codalab to download the dataset. Create a folder named ```databases```in the parent folder of the root directory of this project and put there the database in a folder named ```YouTubeVOS```. The root directory (```rvos```folder) and the ```databases``` folder should be in the same directory.
+Download the YouTube-VOS dataset from their [website](https://youtube-vos.org/). You will need to register to codalab to download the dataset. Create a folder named ```databases```in the parent folder of the root directory of this project and put there the database in a folder named ```YouTubeVOS```. The root directory (```rvos```folder) and the ```databases``` folder should be in the same directory.
 
 The training of the RVOS model for YouTube-VOS has been implemented using a split of the train set into two subsets: train-train and train-val. The model is trained on the train-train subset and validated on the train-val subset to decide whether the model should be saved or not. To train the model according to this split, the code requires that there are two json files in the ```databases/YouTubeVOS/train/```folder named ```train-train-meta.json```and ```train-val-meta.json``` with the same format as the ```meta.json```included when downloading the dataset. You can also download the partition used in our experiments in the following links:
 
@@ -73,7 +73,7 @@ Furthermore, in the ```src``` folder, ```prepare_results_submission.py```and ```
 
 ## Demo
 
-You can run demo.py to do generate the segmentation masks of a video. Just do:
+You can run ```demo.py``` to do generate the segmentation masks of a video. Just do:
 ```
 python demo.py -model_name one-shot-model-davis --overlay_masks
 ```
