@@ -1,6 +1,6 @@
 numpy==1.15.1
 scipy==0.19.0
-pillow==4.0.0
+pillow==8.2.0
 matplotlib==2.0.0
 h5py==2.7.0
 cython==0.25.2
