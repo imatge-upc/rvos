@@ -100,6 +100,8 @@ Download weights for models trained with:
 - [DAVIS 2017 (one-shot)](https://imatge.upc.edu/web/sites/default/files/projects/segmentation/public_html/rvos-pretrained-models/one-shot-model-davis.zip)
 - [DAVIS 2017 (zero-shot)](https://imatge.upc.edu/web/sites/default/files/projects/segmentation/public_html/rvos-pretrained-models/zero-shot-model-davis.zip)
 
+The same files are also available in [this folder](https://drive.google.com/drive/folders/1ZS2T6Iyum3UGftNLBivEHMzQtqWwzgEv?usp=sharing) in Google Drive.
+
 Extract and place the obtained folder under ```models``` directory. 
 You can then run evaluation scripts with the downloaded model by setting ```args.model_name``` to the name of the folder.
 
