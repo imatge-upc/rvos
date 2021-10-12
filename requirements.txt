@@ -12,7 +12,7 @@ tqdm==4.11.2
 munkres==1.0.12
 cython==0.25.2
 visdom==0.1.8.8
-opencv-python==3.4.4.19
+opencv-python==3.4.7.28
 imageio==2.4.1
 lmdb==0.94
 easydict==1.9
